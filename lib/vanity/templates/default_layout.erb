@@ -1,0 +1,9 @@
+<html>
+  <head>
+    <title>Vanity Report: <%= Time.now.strftime("%b %d %Y, %I:%M:%P") %></title>
+    <%= render :partial => Vanity.template('head') %>
+  </head>
+  <body>
+    <%= yield %>
+  </body>
+</html>

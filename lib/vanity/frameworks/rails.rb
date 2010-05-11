@@ -151,7 +151,7 @@ module Vanity
     # Step 3: Open your browser to http://localhost:3000/vanity
     module Dashboard
       def index
-        render :template=>Vanity.template("_report"), :content_type=>Mime::HTML, :layout=>true
+        render :template=>Vanity.template("_report"), :content_type=>Mime::HTML, :layout=>Vanity.template('default_layout')
       end
 
       def chooses
